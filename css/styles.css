@@ -1,0 +1,61 @@
+/* Görev liste elemanlarının stilini belirleyin */
+#todoList {
+    margin-top: 20px;
+}
+
+/* Görev öğelerinin stilini belirleyin */
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Kapsayıcı genişliğine göre ayarla */
+    overflow: hidden; /* İçerik kutunun dışına çıkmasın */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+}
+
+/* Görev metinlerinin stilini belirleyin */
+.todo-text {
+    flex: 1; /* Metin alanını genişletir */
+    overflow-wrap: break-word; /* Uzun kelimeleri alt satıra taşır */
+    word-wrap: break-word; /* Uzun kelimeleri alt satıra taşır */
+    white-space: normal; /* Satır kesme ve boşlukları korur */
+    text-overflow: ellipsis; /* Metin kutudan taşarsa üç nokta gösterir */
+    margin-right: 10px; /* Butonlarla arasındaki boşluk */
+    max-width: calc(100% - 130px); /* Butonları hesaba katarak metin genişliğini ayarla */
+}
+
+/* Buton grubu stilini belirleyin */
+.btn-group {
+    display: flex;
+    flex-direction: column; /* Butonları dikey olarak hizalar */
+    gap: 10px; /* Butonlar arasındaki boşluk */
+    margin-left: 10px; /* Butonlar ile metin arasında boşluk */
+    align-items: flex-end; /* Butonları sağa hizalar */
+}
+
+/* Düzenle ve kaydet butonlarının stilini belirleyin */
+.btn-warning {
+    background-color: #ffc107; /* Sarı renk */
+    border-color: #ffc107; /* Sarı renk */
+}
+
+.btn-success {
+    background-color: #28a745; /* Yeşil renk */
+    border-color: #28a745; /* Yeşil renk */
+}
+
+/* Tamamlandı butonunun stilini belirleyin */
+.btn-secondary {
+    background-color: #28a745; /* Yeşil renk */
+    border-color: #28a745; /* Yeşil renk */
+    color: #fff; /* Beyaz metin rengi */
+}
+
+.btn {
+    flex-shrink: 0; /* Butonların boyutunun değişmesini engeller */
+}
